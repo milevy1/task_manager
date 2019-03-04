@@ -43,4 +43,12 @@ class TaskManagerApp < Sinatra::Base
     Task.destroy(id.to_i)
     redirect '/tasks'
   end
+
+  get '/easteregg' do
+    erb :easteregg
+  end
+
+  get '/showmethetasks' do
+    redirect '/tasks'
+  end
 end
