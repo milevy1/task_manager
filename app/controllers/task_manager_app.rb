@@ -47,4 +47,8 @@ class TaskManagerApp < Sinatra::Base
   get '/easteregg' do
     erb :easteregg
   end
+
+  get '/showmethetasks' do
+    redirect '/tasks'
+  end
 end
